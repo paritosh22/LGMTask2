@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="syleee.css">
+    <title>Task-3 by Paritosh</title>
+</head>
+
+<body>
+
+    <h1>Student Enrollment System</h1>
+    <div class="container centre">
+
+        <table>
+            <tr>
+                <td>
+                    <form class="input-part" autocomplete="off" onsubmit="onFormSubmit()">
+                        <div>
+                            <label for="studentName">Student Name</label>
+                            <input type="text" placeholder="Enter Student Name" name="studentName" id="studentName"required>
+                        </div>
+
+                        <div>
+                            <label for="collegeName">College Name</label>
+                            <input placeholder="Enter College Name" type="text" name="collegeName" id="collegeName"required>
+                        </div>
+
+                        <div>
+                            <label for="Email">Email</label>
+                            <input placeholder="Enter The Email" type="text" name="Email" id="Email"required>
+                        </div>
+
+                        <div class="image">
+                            <label for="url">Image:</label>
+                            <input placeholder="Image URL" type="text" name="Image" id="url" required>
+                        </div>
+
+                        <div class="Gender">
+                            <label for="Gender">Gender:</label>
+                            <span class="text-val">
+                                <label><input type="radio" name="male-female" id="male" value="Male" required>Male</label>
+                                <label><input type="radio" name="male-female" id="female" value="Female" required>Female</label>
+                            </span>
+                        </div>
+
+                        <div class="Skills">
+                            <label for="Skills">Skills:</label>
+                            <span class="text-val">
+                                <label><input type="checkbox" value="HTML" id="html" class="checkbox">HTML</label>
+                                <label><input type="checkbox" value="Css" id="css" class="checkbox">CSS</label>
+                                <label><input type="checkbox" value="JavaScript" id="css" class="checkbox">JavaScript</label>
+                            </span>
+                        </div>
+
+                        <div class="form-btns">
+                            <input type="submit" value="Submit">
+                            <input type="reset" value="Reset">
+                        </div>
+
+                    </form>
+
+                <td>
+                    <table class="list" id="storeList">
+                        <thead>
+                            <tr>
+
+                                <th>Image</th>
+                                <th>Student Name</th>
+                                <th>College Name</th>
+                                <th>Email</th>
+                                <th>Gender</th>
+                                <th>Skills</th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </table>
+      <script src="scriptt.js" defer> </script>
+    </div>
+</body>
+</html>
